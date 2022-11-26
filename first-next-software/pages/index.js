@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Link from "next/link";
+import Image from "next/image";
 
 class Index extends Component {
     render() {
@@ -25,7 +26,7 @@ class Index extends Component {
                 <h1 style={{color: "palevioletred"}}>This is home page</h1>
                 <h1 style={{color: "lightsteelblue"}}>Welcome to Next JS 13</h1>
 
-                <img src="/public/images/file.png" />
+                <Image src="/images/file.png" alt="me" width="680" height="384" />
             </div>
         );
     }
