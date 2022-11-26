@@ -27,6 +27,9 @@ class Index extends Component {
                 <h1 style={{color: "lightsteelblue"}}>Welcome to Next JS 13</h1>
 
                 <Image src="/images/file.png" alt="me" width="680" height="384" />
+                <img src="/pictures/Ixora%20casei%20458kilo.png" alt="me" width="680" height="384" />
+                {/* this is not going to work */}
+                {/*<img src="./Ixora%20casei%20458kilo.png" alt="me" width="680" height="384" />*/}
             </div>
         );
     }
