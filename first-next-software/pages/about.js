@@ -3,10 +3,19 @@ import Head from "next/head";
 import Menu from "../elements/menu";
 
 
+
 class About extends Component {
+
+    static getInitialProps({query}) {
+        return {query}
+    }
+
+
+
+
     render() {
         return (
-            <div>
+            <>
                 <Head>
                     <title>
                         About
@@ -21,13 +30,16 @@ class About extends Component {
                     <meta name="author" content="Rabbil Hasan"/>
 
                 </Head>
+                <h1>This is About Page</h1>
+                <h2>{JSON.stringify(this.props.query)}</h2>
+
 
                 <Menu/>
 
                 <h1 style={{color: "limegreen"}}>Salamoon Alaikoom </h1>
                 <h1 style={{color: "gold"}}>This is About page</h1>
                 <h1 style={{color: "violet"}}>Welcome to Next JS 13</h1>
-            </div>
+            </>
         );
     }
 }

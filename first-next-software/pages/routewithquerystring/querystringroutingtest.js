@@ -7,6 +7,9 @@ import Design from "../../elements/designs/Design.module.css";
 
 
 class Querystringroutingtest extends Component {
+    static getIntialProps(query) {
+        return {query}
+    }
     render() {
         return (
             <div>
@@ -15,15 +18,10 @@ class Querystringroutingtest extends Component {
 
                 <Headerforseometa/>
                 </Head>
-                <ul>
-                    <li>
-                        <Link href={{pathname:"/about", query: {firstName:"Rabbil",lastname:"Hasan"}}}>
-                            About Me
-                        </Link>
-                    </li>
-                </ul>
+
                 <h1 className="display-3">Salam From querystringroutingtest.js</h1>
                 <h1 color="text-primary">pages/routewithquerystring/querystringroutingtest.js</h1>
+                <h1>{this.props.query}</h1>
                 <div className={Design.QueryStringTest}>
                     <Menu/>
                 </div>

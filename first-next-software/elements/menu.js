@@ -49,6 +49,11 @@ class Menu extends Component {
                             Another Nested Route On Nested Dir
                         </Link>
                     </li>
+                    <li>
+                        <Link href={{pathname:"/about", query: {firstName:"Rabbil",lastName:"Hasan"}}}>
+                            About Me
+                        </Link>
+                    </li>
 
                     <li>
                         <Link className="text-primary" href="/routewithquerystring/querystringroutingtest">
