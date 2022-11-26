@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import Link from "next/link";
 import Head from "next/head";
-import Design from "../elements/designs/Design.module.css";
+import Menu from "../elements/menu";
+
 
 class Login extends Component {
     render() {
@@ -22,20 +22,7 @@ class Login extends Component {
 
                 </Head>
 
-                <ul>
-                    <li>
-                        <Link className={Design.TestColor4f0aff} href="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link href="/about">About</Link>
-                    </li>
-                    <li>
-                        <Link href="/contact">Contact</Link>
-                    </li>
-                    <li>
-                        <Link href="/login">Login</Link>
-                    </li>
-                </ul>
+                <Menu/>
 
                 <h1 style={{color: "limegreen"}}>Salamoon Alaikoom </h1>
                 <h1 style={{color: "olive"}}>This is Login page</h1>

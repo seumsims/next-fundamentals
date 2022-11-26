@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
-import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
-import Design from "../../elements/designs/Design.module.css";
+import Menu from "../../elements/menu";
 
 
 class Index extends Component {
@@ -25,26 +24,7 @@ class Index extends Component {
                 </Head>
                 <button className="btn btn-success shadow"><h1>success</h1></button>
 
-                <ul>
-                    <li>
-                        <Link className={Design.TestColor20c997} href="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link href="/about">About</Link>
-                    </li>
-                    <li>
-                        <Link href="/contact">Contact</Link>
-                    </li>
-                    <li>
-                        <Link href="/login">Login</Link>
-                    </li>
-
-                    <li>
-                        <Link href="/seo">SEO</Link>
-                    </li>
-
-
-                </ul>
+                <Menu/>
 
                 <h1 style={{color: "limegreen"}}>Salamoon Alaikoom </h1>
                 <h1 style={{color: "palevioletred"}}>This is home page</h1>

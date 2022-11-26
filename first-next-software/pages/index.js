@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
-import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
-import Design from "../elements/designs/Design.module.css";
+import Menu from "../elements/menu";
 
 
 class Index extends Component {
@@ -24,51 +23,9 @@ class Index extends Component {
 
                 </Head>
                 <button className="btn btn-success shadow"><h1>success</h1></button>
+                <Menu/>
 
-                <ul>
-                    <li>
-                        <Link className={Design.TestColor20c997} href="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link href="/about">About</Link>
-                    </li>
-                    <li>
-                        <Link href="/contact">Contact</Link>
-                    </li>
-                    <li>
-                        <Link href="/login">Login</Link>
-                    </li>
 
-                    <li>
-                        <Link href="/seo">SEO</Link>
-                    </li>
-                    <li>
-                        <Link href="/getstaticpropstest">GetStaticPropsTest</Link>
-                    </li>
-                    <li>
-                        <Link className={Design.TestColor20c997} href="/getserversidepropstest">
-                            getServerSideProps
-                        </Link>
-                    </li>
-
-                    <li>
-                        <Link className={Design.TestColor20c997} href="/indexroutetest">
-                            Index Route Test
-                        </Link>
-                    </li>
-
-                    <li>
-                        <Link className={Design.TestColorFF25C9FF} href="/nestedroutes/nestedroutetest">
-                            Nested Route Test
-                        </Link>
-                    </li>
-
-                    <li>
-                        <Link className={Design.TestColorff8306} href="/nestedroutes/nestedroutesdir/anoternestedroutefile">
-                           Another Nested Route On Nested Dir
-                        </Link>
-                    </li>
-                </ul>
 
                 <h1 style={{color: "limegreen"}}>Salamoon Alaikoom </h1>
                 <h1 style={{color: "palevioletred"}}>This is home page</h1>

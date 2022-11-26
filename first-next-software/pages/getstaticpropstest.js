@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
-import Link from "next/link";
 import Head from "next/head";
-import Design from "../elements/designs/Design.module.css";
+import Menu from "../elements/menu";
 
 export async function getStaticProps(){
     const res = await fetch( 'https://restcountries.com/v3.1/all');
@@ -28,14 +27,9 @@ class Getstaticpropstest extends Component {
                     <meta name="author" content="Rabbil Hasan"/>
 
                 </Head>
-                <ul>
-                    <li>
-                        <Link className={Design.TestColorFF25C9FF} href="/">
-                            Home
 
-                        </Link>
-                    </li>
-                </ul>
+                <Menu/>
+
                 <h1 className="display-4">Salam from Get Static Props Test Page</h1>
                 <textarea name="" id="" cols="80" rows="10">
                       {this.props.countryList}

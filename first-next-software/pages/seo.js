@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import Link from "next/link";
 import Head from "next/head";
-import Design from "../elements/designs/Design.module.css";
+import Menu from "../elements/menu";
+
 
 class Seo extends Component {
     render() {
@@ -19,14 +19,9 @@ class Seo extends Component {
                     <meta name="author" content="Rabbil Hasan"/>
 
                 </Head>
-                <ul>
-                    <li>
-                        <Link className={Design.TestColorFF25C9FF} href="/">
-                            Home
 
-                        </Link>
-                    </li>
-                </ul>
+                <Menu/>
+
                 <h1>Salam from Seo Page</h1>
 
             </div>
