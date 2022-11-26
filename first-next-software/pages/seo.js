@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Link from "next/link";
 import Head from "next/head";
+import Design from "../elements/designs/Design.module.css";
 
 class Seo extends Component {
     render() {
@@ -20,7 +21,7 @@ class Seo extends Component {
                 </Head>
                 <ul>
                     <li>
-                        <Link href="/">
+                        <Link className={Design.TestColorFF25C9FF} href="/">
                             Home
 
                         </Link>

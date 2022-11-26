@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
+import Design from "../elements/designs/Design.module.css"
 
 class Index extends Component {
     render() {
@@ -24,7 +25,7 @@ class Index extends Component {
 
                 <ul>
                     <li>
-                        <Link href="/">Home</Link>
+                        <Link className={Design.TestColor20c997} href="/">Home</Link>
                     </li>
                     <li>
                         <Link href="/about">About</Link>

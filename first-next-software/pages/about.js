@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Link from "next/link";
 import Head from "next/head";
+import Design from "../elements/designs/Design.module.css"
 
 class About extends Component {
     render() {
@@ -23,7 +24,7 @@ class About extends Component {
 
                 <ul>
                     <li>
-                        <Link href="/">Home</Link>
+                        <Link className={Design.TestColorFF2525FF} href="/">Home</Link>
                     </li>
                     <li>
                         <Link href="/about">About</Link>
