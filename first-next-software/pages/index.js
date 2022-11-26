@@ -4,6 +4,14 @@ import Head from "next/head";
 import Menu from "../elements/menu";
 import Headerforseometa from "../elements/headerforseometa";
 
+export async function getStaticProps(){
+    return {
+        props:{
+            APIKEY:process.env.APIKEY
+        }
+    }
+}
+
 
 class Index extends Component {
     render() {
@@ -17,7 +25,7 @@ class Index extends Component {
                   <Headerforseometa/>
 
                 </Head>
-                <button className="btn btn-success shadow"><h1>success</h1></button>
+                <h1> API KEY: {this.props.APIKEY}</h1>
                 <Menu/>
 
 
