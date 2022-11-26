@@ -5,7 +5,7 @@ class Index extends Component {
     render() {
         return (
             <div>
-                <h1>Salamoon Alaikoom Welcome to Next JS 13</h1>
+
                 <ul>
                     <li>
                         <Link href="/">Home</Link>
@@ -20,6 +20,10 @@ class Index extends Component {
                         <Link href="/login">Login</Link>
                     </li>
                 </ul>
+
+                <h1 style={{color:"limegreen"}}>Salamoon Alaikoom </h1>
+                <h1 style={{color: "palevioletred"}}>This is home page</h1>
+                <h1 style={{color: "lightsteelblue"}}>Welcome to Next JS 13</h1>
             </div>
         );
     }
