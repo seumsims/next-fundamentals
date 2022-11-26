@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Link from "next/link";
+import Router from "next/router";
 import Design from "./designs/Design.module.css";
 
 class Menu extends Component {
@@ -18,6 +19,12 @@ class Menu extends Component {
                     </li>
                     <li>
                         <Link href="/login">Login</Link>
+                    </li>
+
+                    <li>
+                        <button onClick={() => Router.push("/imperativeroutingtest")}>
+                            Imperative Routing Test Button
+                        </button>
                     </li>
 
                     <li>
