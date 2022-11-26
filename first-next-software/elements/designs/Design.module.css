@@ -17,3 +17,8 @@
 .TestColorff8306 {
     color: #ff8306;
 }
+
+.QueryStringTest ul li  {
+    display: inline-block;
+    padding-left: 10px;
+}

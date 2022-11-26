@@ -5,7 +5,7 @@ import Design from "./designs/Design.module.css";
 class Menu extends Component {
     render() {
         return (
-            <div>
+            <>
                 <ul>
                     <li>
                         <Link className={Design.TestColor20c997} href="/">Home</Link>
@@ -56,7 +56,7 @@ class Menu extends Component {
                         </Link>
                     </li>
                 </ul>
-            </div>
+            </>
         );
     }
 }
