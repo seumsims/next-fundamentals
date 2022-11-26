@@ -3,7 +3,7 @@ import Link from "next/link";
 import Head from "next/head";
 import Design from "../elements/designs/Design.module.css";
 
-export async function getStaticProps(){
+export async function getServerSideProps(){
     const res = await fetch( 'https://restcountries.com/v3.1/all');
     const json = await res.json();
 
@@ -12,12 +12,12 @@ export async function getStaticProps(){
     }
 }
 
-class Getstaticpropstest extends Component {
+class Getserversidepropstest extends Component {
     render() {
         return (
             <div>
                 <Head>
-                    <title>Get Static Props Test</title>
+                    <title>Get Sever Side Props Test</title>
 
                     <link rel="shortcut icon" href="https://react.rabbil.com/images/favicon.ico" type="image/x-icon"/>
                     <link rel="icon" href="https://react.rabbil.com/images/favicon.ico" type="image/x-icon"/>
@@ -36,7 +36,7 @@ class Getstaticpropstest extends Component {
                         </Link>
                     </li>
                 </ul>
-                <h1 className="display-4">Salam from Get Static Props Test Page</h1>
+                <h1 className="display-4">Salam from Get Sever Side Props Test Page</h1>
                 <textarea name="" id="" cols="80" rows="10">
                       {this.props.countryList}
                 </textarea>
@@ -45,4 +45,4 @@ class Getstaticpropstest extends Component {
     }
 }
 
-export default Getstaticpropstest;
+export default Getserversidepropstest;

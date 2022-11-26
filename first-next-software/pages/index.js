@@ -4,6 +4,7 @@ import Image from "next/image";
 import Head from "next/head";
 import Design from "../elements/designs/Design.module.css"
 import Getstaticpropstest from "./getstaticpropstest";
+import {getServerSideProps} from "./getserversidepropstest";
 
 class Index extends Component {
     render() {
@@ -44,6 +45,11 @@ class Index extends Component {
                     </li>
                     <li>
                         <Link href="/getstaticpropstest">GetStaticPropsTest</Link>
+                    </li>
+                    <li>
+                        <Link className={Design.TestColor20c997} href="/getserversidepropstest">
+                            getServerSideProps
+                        </Link>
                     </li>
                 </ul>
 
