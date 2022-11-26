@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
-import Design from "../elements/designs/Design.module.css";
+import Design from "../../elements/designs/Design.module.css";
 
 
 class Index extends Component {
@@ -11,7 +11,7 @@ class Index extends Component {
             <div>
                 <Head>
                     <title>
-                        Home
+                        Index Route Test Page
                     </title>
 
                     <link rel="shortcut icon" href="https://react.rabbil.com/images/favicon.ico" type="image/x-icon"/>
@@ -48,12 +48,6 @@ class Index extends Component {
                     <li>
                         <Link className={Design.TestColor20c997} href="/getserversidepropstest">
                             getServerSideProps
-                        </Link>
-                    </li>
-
-                    <li>
-                        <Link className={Design.TestColor20c997} href="/indexroutetest">
-                            Index Route Test
                         </Link>
                     </li>
                 </ul>
