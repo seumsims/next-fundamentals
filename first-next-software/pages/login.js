@@ -1,10 +1,16 @@
 import React, {Component} from 'react';
 import Link from "next/link";
+import Head from "next/head";
 
 class Login extends Component {
     render() {
         return (
             <div>
+                <Head>
+                    <title>
+                        Login
+                    </title>
+                </Head>
 
                 <ul>
                     <li>

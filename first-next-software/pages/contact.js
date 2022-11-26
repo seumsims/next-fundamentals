@@ -1,10 +1,17 @@
 import React, {Component} from 'react';
 import Link from 'next/link';
+import Head from 'next/head';
 
 class Contact extends Component {
     render() {
         return (
             <div>
+                <Head>
+                    <title>
+                        Contact
+                    </title>
+                </Head>
+
 
                 <ul>
                     <li>

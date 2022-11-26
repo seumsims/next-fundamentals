@@ -1,11 +1,22 @@
 import React, {Component} from 'react';
 import Link from "next/link";
 import Image from "next/image";
+import Head from "next/head";
 
 class Index extends Component {
     render() {
         return (
             <div>
+                <Head>
+                    <title>
+                        Home
+                    </title>
+                    <link rel="shortcut icon" href="https://react.rabbil.com/images/favicon.ico" type="image/x-icon"/>
+                        <link rel="icon" href="https://react.rabbil.com/images/favicon.ico" type="image/x-icon"/>
+                            <meta name="description" content="Laravel tutorial bangla | Rabbil Hasan is an Expert Web Developer in Bangladesh. He is highly talented, experienced, professional and cooperative software engineer, working in programming and web world for more than 4 years. Moreover Rabbil Hasan has a skilled team for achieving his goal named “Team Rabbil”.Team Rabbil assure you a wide range of quality IT services. "/>
+                                <meta name="keywords" content="Laravel  tutorial bangla, Expert Web Developer in Bangladesh, Expert Mobile App Developer in Bangladesh, Android App Developer in Bangladesh"/>
+                                    <meta name="author" content="Rabbil Hasan"/>
+                </Head>
 
                 <ul>
                     <li>
@@ -19,6 +30,10 @@ class Index extends Component {
                     </li>
                     <li>
                         <Link href="/login">Login</Link>
+                    </li>
+
+                    <li>
+                        <Link href="/seo">SEO</Link>
                     </li>
                 </ul>
 
