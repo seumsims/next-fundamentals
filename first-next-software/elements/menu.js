@@ -49,6 +49,12 @@ class Menu extends Component {
                             Another Nested Route On Nested Dir
                         </Link>
                     </li>
+
+                    <li>
+                        <Link className="text-primary" href="/routewithquerystring/querystringroutingtest">
+                            Query String Routing
+                        </Link>
+                    </li>
                 </ul>
             </div>
         );
