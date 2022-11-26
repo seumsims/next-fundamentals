@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
 import Design from "../elements/designs/Design.module.css"
+import Getstaticpropstest from "./getstaticpropstest";
 
 class Index extends Component {
     render() {
@@ -40,6 +41,9 @@ class Index extends Component {
 
                     <li>
                         <Link href="/seo">SEO</Link>
+                    </li>
+                    <li>
+                        <Link href="/getstaticpropstest">GetStaticPropsTest</Link>
                     </li>
                 </ul>
 
