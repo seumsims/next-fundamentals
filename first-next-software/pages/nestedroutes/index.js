@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
-import Design from "../elements/designs/Design.module.css";
+import Design from "../../elements/designs/Design.module.css";
 
 
 class Index extends Component {
@@ -11,7 +11,7 @@ class Index extends Component {
             <div>
                 <Head>
                     <title>
-                        Home
+                        Index Nested Route Test Page
                     </title>
 
                     <link rel="shortcut icon" href="https://react.rabbil.com/images/favicon.ico" type="image/x-icon"/>
@@ -42,32 +42,8 @@ class Index extends Component {
                     <li>
                         <Link href="/seo">SEO</Link>
                     </li>
-                    <li>
-                        <Link href="/getstaticpropstest">GetStaticPropsTest</Link>
-                    </li>
-                    <li>
-                        <Link className={Design.TestColor20c997} href="/getserversidepropstest">
-                            getServerSideProps
-                        </Link>
-                    </li>
 
-                    <li>
-                        <Link className={Design.TestColor20c997} href="/indexroutetest">
-                            Index Route Test
-                        </Link>
-                    </li>
 
-                    <li>
-                        <Link className={Design.TestColorFF25C9FF} href="/nestedroutes/nestedroutetest">
-                            Nested Route Test
-                        </Link>
-                    </li>
-
-                    <li>
-                        <Link className={Design.TestColorff8306} href="/nestedroutes/nestedroutesdir/anoternestedroutefile">
-                           Another Nested Route On Nested Dir
-                        </Link>
-                    </li>
                 </ul>
 
                 <h1 style={{color: "limegreen"}}>Salamoon Alaikoom </h1>
